@@ -10,18 +10,19 @@ const Navbar = ({ OpenImages, setOpenImages }) => {
       <Left>
         {
           Navigations.map((v) => v.view && (
-              <NavLink key={v.id} className={({ isActive }) => isActive ? 'link active' : 'link'}
-                to={v.path}
-              >
-                {v.name}
-              </NavLink>
+            <NavLink key={v.id} className={({ isActive }) => isActive ? 'link active' : 'link'}
+              to={v.path}
+            >
+              {v.name}
+            </NavLink>
           )
           )
         }
       </Left>
       <Right>
-        <select name="" id="">
-          <option value="">me</option>
+        <select className='select' name="" id="">
+          <option value="">My Profile</option>
+          <option value="">Exit</option>
         </select>
         <div onClick={() => setOpenImages(true)} className="profile">
           <img src={Profile} alt="" />

@@ -37,8 +37,19 @@ const Right = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: right;
+    gap: 30px;
+    .select{
+        background-color: transparent;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    .select option{
+        color: black;
+    }
     .profile{
-        width: 60px;
+        width: 55px;
         position: relative;
         cursor:pointer;
         img{

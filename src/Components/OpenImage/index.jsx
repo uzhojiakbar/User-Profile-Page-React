@@ -4,19 +4,19 @@ import { Container, Controls, Image } from './style'
 const OpenImage = ({ img, setOpenImages }) => {
     const [rotate, setRotate] = useState(0)
     const onRotate = () => {
-        if (rotate == 0) {
+        if (rotate === 0) {
             setRotate(90)
         }
-        if (rotate == 90) {
+        if (rotate === 90) {
             setRotate(180)
         }
-        if (rotate == 180) {
+        if (rotate === 180) {
             setRotate(270)
         }
-        if (rotate == 270) {
+        if (rotate === 270) {
             setRotate(360)
         }
-        if (rotate == 360) {
+        if (rotate === 360) {
             setRotate(0)
         }
     }

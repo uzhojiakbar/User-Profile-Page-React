@@ -19,7 +19,7 @@ const Image = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(${({rotate})=>rotate?rotate:0}deg);
+    transform: rotate(${({ rotate }) => rotate ? rotate : 0}deg);
     img{
         width: 160%;
     }
